@@ -1,0 +1,53 @@
+/* * {
+  border: 1px solid red;
+} */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  font-size: 15px;
+}
+.brand-image {
+  max-height: 8vw;
+}
+.shadow-box {
+  box-shadow: 0px 2px 5px 0px #999999;
+}
+.overview-bg1 {
+  border: 15px solid;
+  border-image: linear-gradient(60deg, rgba(246,79,89,1) 0%, rgba(196,113,237,1) 50%, rgba(0,212,255,1) 100%) 1;
+}
+.overview-h {
+  font-weight: bold;
+}
+#html-image {
+  max-height: 38vw;
+}
+#circle-logo {
+  max-height: 30vw;
+  margin: 40px 10px 40px 0;
+}
+#wdpp-image {
+  max-height: 50vw;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+  .brand-image {
+    max-height: 5vw;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
+  .brand-image {
+    max-height: 3.5vw;
+  }
+  .col-6#code-img {
+    padding: 0;
+  }
+  .overview-bg1 {
+    background: rgb(255,255,255);
+    border: none;
+  }
+}
