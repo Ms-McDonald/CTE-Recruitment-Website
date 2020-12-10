@@ -1,6 +1,6 @@
-/* * {
-  border: 1px solid red;
-} */
+* {
+  /* border: 1px solid red; */
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -20,6 +20,9 @@ ul {
 .overview-h {
   font-weight: bold;
 }
+.c-images {
+  padding: 15px;
+}
 #html-image {
   max-height: 38vw;
 }
@@ -28,7 +31,7 @@ ul {
   margin: 40px 10px 40px 0;
 }
 #wdpp-image {
-  max-height: 50vw;
+  max-height: 550px;
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px)
