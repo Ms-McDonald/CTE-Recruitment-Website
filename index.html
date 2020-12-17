@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Font Awesome CSS -->
-  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ebd820205d.js" crossorigin="anonymous"></script>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <!-- My CSS -->
@@ -15,10 +15,10 @@
 
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="contain">
       <!-- NAVBAR-->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><img class="image-fluid brand-image" src="img/global/brand-logo.png" alt="CTE Web Design"></a>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light white-bg">
+        <a class="navbar-brand" href="index.html"><img class="image-fluid brand-image" src="img/global/brand-logo-c.png" alt="CTE Web Design"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> <!-- /.navbar-toggler -->
@@ -29,21 +29,22 @@
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Curriculum</a>
+              <a class="nav-link" href="curriculum.html">Curriculum</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="bottom" title="COMING SOON!">
+              <a class="nav-link disabled" href="schools.html">Schools</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pathway</a>
+              <a class="nav-link" href="why.html">Why Web Design?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Why Web Design?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div><!-- /.collapse /.navbar-collapse -->
       </nav>
 
+  <div class="container-fluid">
     <div class="row shadow-box mb-1">
       <div class="col-lg-6 col-md-12 d-md-block text-center">
         <img class="image-fluid jumbo-image float-lg-right" id="circle-logo" src="img/home/circle-logo.png" alt="">
@@ -58,7 +59,7 @@
         <img id="wdpp-image" src="img/home/wdpp-circles.png" alt="">
       </div>
       <div class="col-lg-6 col-md-12 pt-4 pl-5 pr-4 pl-lg-0">
-        <h4 class="overview-h pt-3">WDPP</h4>
+        <h4 class="bold pt-3">WDPP</h4>
         <p>
           FRHSD's Web Design Pathway Program is a 3–year program focused on
           preparing students for a future career in Web Design (or related field).
@@ -68,7 +69,7 @@
             <li>Built to help students explore college & career options related to the Web Design industry, complete the program with industry credentials, AND develop a passion for the creative field of Web Design.</li>
             <li>FUN and filled with unique projects in which students can show off their own personalities, abilities, and interests!</li>
           </ul>
-        <h4 class="overview-h pt-3">EXPECTED OUTCOMES & POSSIBILITIES</h4>
+        <h4 class="bold pt-3">EXPECTED OUTCOMES & POSSIBILITIES</h4>
           <ul>
             <li>Chance to develop marketable skills in a rapidly expanding field College readiness</li>
             <li>Potential to receive industry credentials via NOCTI Test</li>
@@ -80,14 +81,14 @@
     </div>
 
     <div class="row justify-content-around text-center mt-5">
-      <div class="col-3">
+      <div class="col-xs-12 col-lg-3">
         <a href="#"><h5>Honors Web Design</h5>
         <img class="img-fluid p-4" src="img/home/html.png" alt="">
         <!-- <p>In this course, students learn the fundamentals of the internet,
         coding principles, HTML code, and CSS code to create and maintain
         static websites using current industry tools and emerging trends and technologies.</p> --></a>
       </div>
-      <div class="col-3">
+      <div class="col-xs-12 col-lg-3">
         <a href=""><h5>Advanced Web Design</h5>
           <img class="img-fluid p-5" src="img/home/js.png" alt="">
           <!-- <p>In this course, students continue applying their knoledge and skills
@@ -96,7 +97,7 @@
           a Structured Learning Experience (SLE) by working with clients to build
           professional websites to specification.</p> --></a>
       </div>
-      <div class="col-3">
+      <div class="col-xs-12 col-lg-3">
         <a href=""><h5>NJIT IS 219</h5>
         <h6>Advanced Website Development</h6>
         <img class="img-fluid" src="img/home/vue.png" alt="">
@@ -109,16 +110,8 @@
 
     <div class="parallax"></div>
 
-    <!-- <div class="parallax mb-5">
-      <div class="row white-bg mt-5">
-        <div class="col-8">
-
-        </div>
-      </div>
-    </div> -->
-
     <div class="row justify-content-center">
-      <div class="col-5 pt-3">
+      <div class="col-5 d-none d-lg-block pt-3">
         <div class="row pr-5 justify-content-end">
           <div class="col-8">
             <img class="img-fluid" src="img/home/nocti-logo.png" alt="">
@@ -131,8 +124,16 @@
         </div>
       </div>
 
-      <div class="col-6 py-5">
-        <h2 class="overview-h pb-3">CREDIT/CERTIFICATION</h2>
+      <div class="col-12 col-lg-6 p-5 text-center text-lg-left">
+        <h2 class="bold pb-3">CREDIT/CERTIFICATION</h2>
+        <div class="row justify-content-center pb-3">
+          <div class="col-4">
+            <img class="img-fluid d-block d-lg-none" src="img/home/nocti-logo.png" alt="">
+          </div>
+          <div class="col-4">
+            <img class="img-fluid d-block d-lg-none" src="img/home/njit-logo.png" alt="">
+          </div>
+        </div>
         <p>The WDPP students will take an exam at the end of the program; this
         exam is provided by the National Occupational Competency Testing Institute
         (NOCTI). Successful completion of the NOCTI exam awards the students with
@@ -145,6 +146,115 @@
 
     <div class="parallax"></div>
 
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-10">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="card-header"  style="color:white" id="headingOne">
+              <p class="mb-0 text-left">
+                  What do you learn in the web design program?
+              </p>
+            </div>
+          </button>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                During the three year program you will learn how to design and develop your own unique websites. The first year is focused on getting the basics down; learning HTML, CSS, and frameworks like Bootstrap to make sure your websites look good on any device. Junior year is when you get into JavaScript, which is a more complex programming language. Utilizing JavaScript in your website will allow you to include more complex features, like interactivity, animations, and more!
+        <br><br>
+        Your final year in the Web Design pathway program is basically a college course. We use NJIT's IS219 course curriculum and that means you can even receive college credit for satisfactorily completing the course. The curriculum includes more intense JavaScript projects, a Structured Learning Experience, and Vue.js.
+        <br><br>
+        After completing all three of the web design courses, you will be confident in your front-end development skills, and ready to continue your education in technology fields, or use your new invaluable knowledge as an incentive to colleges and/or future employers.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <div class="card-header" style="color:white;" id="headingTwo">
+              <p class="mb-0 text-left">
+                  Will we learn to make video games?
+              </p>
+            </div>
+          </button>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                While we may not be creating video games during the school year, you will definitely be learning the languages and skills needed to create games.
+        <br><br>
+        Here's a website that has a few examples of games created with HTML, JavaScript, and other web technologies:
+        <br>
+        <a href="https://www.ma-no.org/en/programming/javascript/15-awesome-games-made-with-html5-and-javascript">Examples of Games</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <div class="card-header" style="color:white" id="headingThree">
+              <p class="mb-0 text-left">
+                  Why should I take this class?
+              </p>
+            </div>
+          </button>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                If you Google <em>'why learn web development'</em>, you will find countless articles listing all of the positive things that come with learning web development.
+        <em>Devmountain Blog</em> has a great list, including job availability, access to free educational resources, ability to work remotely, freelancing opportunities, and fostering your creativity.
+        They do a much better job reviewing these points, so be sure to check out their article here: <a href="https://blog.devmountain.com/7-reasons-learn-web-development/#:~:text=Web%20development%20gives%20you%20the,dev%20skills%2C%20try%20it%20out.&text=Read%20more%20to%20learn%20how,billion%20people%20using%20the%20internet">7 Reasons You Should Learn Web Development</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <div class="card-header" style="color:white" id="headingFour">
+              <p class="mb-0 text-left">
+                  What kind of jobs/majors are related to web design?
+              </p>
+            </div>
+          </button>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                Web Designers are in high demand. Most businesses, large and small, have websites for their products and services. Web Designers can specialize in areas such as UX Designer, Multimedia Specialist, Application Developer, and Web-Content Manager.
+                <br><br>
+                If you are looking to be a web designer, there are a variety of college degree programs that you could pursue. Computer Science, Information Technology, Web & Information System, or Graphics Design are a few possible choices.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              <div class="card-header" style="color:white" id="headingFive">
+              <p class="mb-0 text-left">
+                  What is the difference between web design and web development?
+              </p>
+            </div>
+          </button>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                Web Design refers to the aesthetics and usability of a website.  Web Designers decide on layouts, color schemes, graphics, and ease of access.  Web Development on the other hand, is the functional portion of the web page, which focuses on bringing the design files to life.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+              <div class="card-header" style="color:white" id="headingSix">
+              <p class="mb-0 text-left">
+                  Do I have to commit to all three years of the program?
+              </p>
+            </div>
+          </button>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                The Web Design CTE Program consists of 1 course, each year, for 3 years.  You will also receive your 21st Century Elective Credit.  It is suggested that you remain in the program for its duration.  You will have ample opportunities to take additional electives classes as well.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div><!-- /.contain -->
 </div><!-- /.container-fluid -->
 
 
@@ -153,5 +263,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="js/tool-tip.js" charset="utf-8"></script>
+
 </body>
 </html>
